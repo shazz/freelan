@@ -27,6 +27,8 @@ else:
     libraries.append('cryptoplus')
 
 libraries.append('boost_system')
+#required by OpenWrt/busybox : boost thread
+libraries.append('boost_thread')
 libraries.append('boost_program_options')
 libraries.append('boost_filesystem')
 libraries.append('crypto')
